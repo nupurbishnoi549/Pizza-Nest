@@ -1,0 +1,77 @@
+import React from 'react';
+import Heading from './common/Heading';
+import { CARD_ITEMS } from '../utils/helper';
+import pizzaImg from '../assets/images/webp/pizza-man-img.png';
+import sliceImg from '../assets/images/webp/slice-img.png'
+
+const AboutUs = () => {
+    return (
+        <div>
+            <div className="relative pt-[100px] sm:pb-[149px] pb-[100px] px-5">
+                <div className="absolute inset-0 bg-layer-section z-0" />
+                <div className="relative z-10 max-w-[1114px] mx-auto w-full">
+                    <div className="flex flex-col lg:flex-row items-center lg:items-start gap-10 xl:gap-[133px] lg:gap-[47px]">
+                        <div className="flex flex-col items-center lg:items-start">
+                            <div className="flex items-center gap-[6px] pb-2">
+                                <p className="font-bold text-lg bg-gradient-to-r from-[#EC6112] to-[#FF902E] bg-clip-text text-transparent whitespace-nowrap">
+                                    About Us
+                                </p>
+                                <div className="h-px w-[60px] bg-gradient-to-r from-[#EC6112] to-[#FF902E] opacity-100"></div>
+                            </div>
+
+                            <Heading headingText="Welcome to the Nest" headingClass="text-center lg:text-left" />
+
+                            <ul className="list-disc text-dark-gray marker:text-dark-gray pl-5 mt-4 space-y-3 max-w-[542px] text-center lg:text-left">
+                                <li className="font-normal text-base">
+                                    At PizzaNest, we believe that pizza is more than just food — it’s an emotion, a celebration, and comfort all rolled into one delicious slice. Founded with a passion for real ingredients and big flavors, we set out to bring handcrafted, oven-fresh pizzas to every corner of India.
+                                </li>
+                                <li className="font-normal text-base">
+                                    Whether you're craving spicy paneer, a creamy cheese burst, or a fully loaded custom pizza made your way, we've got you covered. Each pizza is baked with love, topped with the freshest veggies, premium cheese, and authentic sauces — all delivered hot and fast, right to your doorstep.
+                                </li>
+                            </ul>
+
+                            <div className="flex flex-wrap justify-center lg:justify-start max-[598px]:gap-3 min-[598px]:gap-6 mt-6">
+                                {CARD_ITEMS.map((item, index) => {
+                                    const Icon = item.icon;
+                                    const paddingTopClass =
+                                        index === 1 ? 'min-[574px]:mt-9 max-[574px]:mt-3' : 'min-[574px]:mt-6 max-[574px]:mt-3';
+
+                                    return (
+                                        <div
+                                            key={index}
+                                            className={`w-[170px] h-[122px] rounded-[12px] border border-dashed border-[#f67a21]/50 
+              p-4 flex flex-col items-center justify-center text-center bg-white 
+              shadow-orange-custom transition-all duration-300 ease-in-out 
+              hover:shadow-md hover:-translate-y-1 ${paddingTopClass}`}
+                                        >
+
+                                            <div className="text-[52px] text-transparent bg-clip-text bg-gradient-to-r from-[#EC6112] to-[#FF902E] mb-2">
+                                                <Icon />
+                                            </div>
+                                            <p className="text-dark-gray text-sm font-semibold leading-[120%]">
+                                                {item.label}
+                                            </p>
+                                        </div>
+                                    );
+                                })}
+                            </div>
+                        </div>
+                        <div className="mt-8 lg:mt-0">
+                            <img
+                                src={pizzaImg}
+                                alt="pizza"
+                                className="w-full xl:max-w-[423px] max-w-[376px] mx-auto"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {/* <div className="absolute left-0 bottom-[-134%] max-[1024px]:bottom-[-73%] min-[1025px]:bottom-[-72%] min-[1280px]:bottom-[-70%]">
+                <img src={sliceImg} alt="slice" className="w-[180px] sm:w-[220px] xl:w-[220px] xl:h-[254px]" />
+            </div> */}
+        </div>
+
+    );
+};
+
+export default AboutUs;
