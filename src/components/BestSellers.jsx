@@ -3,7 +3,7 @@ import { PIZZA_DATA } from '../utils/helper';
 
 const BestSellers = () => {
     return (
-        <div className=" py-[100px] relative px-5">
+        <div className=" py-[100px] relative px-5 bg-[#F8F8F880]">
             <div className="absolute inset-0 bg-layer-section z-0" />
             <div className="max-w-[1140px] relative z-10  mx-auto text-center">
                 <div className="flex items-center gap-[6px] justify-center pb-2">

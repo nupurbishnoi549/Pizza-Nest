@@ -74,6 +74,9 @@
 .text-dark-gray {
   color: var(--color-dark-gray);
 }
+.text-primary-gray {
+  color: var(--primary-dark);
+}
 .text-dark {
   color: var(--text-dark);
 }
@@ -104,4 +107,8 @@
 
 .shadow-orange-custom {
     box-shadow: 0px 1px 7px 0px #F67A211F;
+}
+
+.buy-one-bg{
+  background-image: url('../src/assets/images/webp/buy-one-img.png');
 }

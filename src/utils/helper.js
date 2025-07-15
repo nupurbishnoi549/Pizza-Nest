@@ -106,3 +106,10 @@ export const CRAVINGS_MENU = [
         rating: 5,
     },
 ];
+
+export const FEATURES = [
+    "30-Minute Delivery Promise",
+    "Hygienic, Contactless Delivery",
+    "Real-time Order Tracking",
+    "Eco-Friendly Packaging"
+];

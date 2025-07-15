@@ -5,6 +5,8 @@ import AboutUs from './components/AboutUs';
 import Pizza from './components/Pizza';
 import BestSellers from './components/BestSellers';
 import Cravings from './components/Cravings';
+import LimitedOffer from './components/LimitedOffer';
+import FoodDelivery from './components/FoodDelivery';
 
 const App = () => {
   return (
@@ -14,7 +16,9 @@ const App = () => {
       <AboutUs />
       <Pizza />
       <BestSellers />
-      <Cravings/>
+      <Cravings />
+      <LimitedOffer />
+      <FoodDelivery/>
     </>
   )
 }
