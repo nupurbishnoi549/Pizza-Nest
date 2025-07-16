@@ -24,7 +24,7 @@ const Testimonial = () => {
     const handleNext = () => swiperRef.current?.slideNext();
 
     return (
-        <div className="relative px-5 py-25 bg-[#F8F8F880] bg-no-repeat bg-cover bg-center max-w-[1920px] mx-auto">
+        <div className="relative px-5 md:py-25 py-16 bg-[#F8F8F880] bg-no-repeat bg-cover bg-center max-w-[1920px] mx-auto">
             <div className="absolute inset-0 bg-layer-section z-0" />
             <div className='max-w-[1140px] relative z-10 mx-auto'>
                 <div className="flex items-center gap-[6px] justify-center pb-2">

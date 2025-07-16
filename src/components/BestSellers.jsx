@@ -8,12 +8,22 @@ import Description from './common/Description';
 
 const BestSellers = () => {
     return (
-        <div id='customize' className=" py-[100px] relative px-5 bg-[#F8F8F880] max-w-[1920px] mx-auto">
+        <div id='customize' className="md:py-[100px] py-16 relative px-5 bg-[#F8F8F880] max-w-[1920px] mx-auto">
             <div className="absolute inset-0 bg-layer-section z-0" />
-            <div className='absolute z-10 right-0 xl:top-[-13%] sm:top-[-8%] top-[-5%] hidden md:block'>
-                <img src={tomatoImg} alt="tomatoImg" className='lg:w-[200px] w-[125px] pointer-events-none' />
+            <div
+                className='absolute z-10 right-0 xl:top-[-13%] sm:top-[-8%] top-[-5%] hidden md:block'
+                data-aos="fade-down-left"
+                data-aos-duration="1000"
+                data-aos-delay="200"
+            >
+                <img
+                    src={tomatoImg}
+                    alt="tomatoImg"
+                    className='lg:w-[200px] w-[125px] pointer-events-none'
+                />
             </div>
-            <div className="max-w-[1140px] relative z-10  mx-auto text-center">
+
+            <div className="max-w-[1140px] relative z-10 mx-auto text-center">
                 <div className="flex items-center gap-[6px] justify-center pb-2">
                     <div className="h-[1px] w-[60px] bg-gradient-to-r from-[#EC6112] via-[#FF902E] to-transparent"></div>
                     <SubHeading subText="Best Sellers" />
@@ -21,12 +31,17 @@ const BestSellers = () => {
                 </div>
                 <Heading headingText='Pizzas You Can’t Say No To' headingClass='!mb-4 !text-near-black' />
                 <Description descriptionClass='!text-charcoal-gray' descriptionText='Tried, tested, and totally loved. These pizzas are always a crowd favorite.' />
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-20 xl:grid-cols-4 gap-6 pt-[125px]">
+
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-20 xl:grid-cols-4 gap-6 md:pt-[125px] pt-24">
                     {PIZZA_DATA.map((pizza, idx) => (
                         <div
                             key={pizza.name}
+                            data-aos="fade-up"
+                            data-aos-delay={idx * 100}
+                            data-aos-duration="800"
                             className="relative bg-white rounded-xl p-6 pt-[85px] flex flex-col items-center
-             shadow transition-all duration-300 ease-in-out hover:shadow-xl hover:-translate-y-2">
+                    shadow transition-all duration-300 ease-in-out hover:shadow-xl hover:-translate-y-2"
+                        >
                             <div className="absolute -top-16 left-1/2 -translate-x-1/2">
                                 <img
                                     src={pizza.img}
@@ -42,6 +57,7 @@ const BestSellers = () => {
                     ))}
                 </div>
             </div>
+
         </div>
     )
 }

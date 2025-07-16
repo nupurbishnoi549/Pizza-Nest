@@ -6,7 +6,7 @@ import CustomButton from './common/CustomButton';
 
 const EasySteps = () => {
     return (
-        <div className="px-5 py-[100px] max-w-[1920px] mx-auto">
+        <div className="px-5 md:py-[100px] py-16 max-w-[1920px] mx-auto">
             <div className="max-w-[1140px] mx-auto text-center">
                 <div className="flex items-center gap-[6px] justify-center pb-2">
                     <div className="h-[1px] w-[60px] bg-gradient-to-r from-[#EC6112] via-[#FF902E] to-transparent"></div>
@@ -14,7 +14,7 @@ const EasySteps = () => {
                     <div className="h-[1px] w-[60px] bg-gradient-to-l from-[#EC6112] via-[#FF902E] to-transparent"></div>
                 </div>
                 <Heading headingText='Your Perfect Pizza in Just 3 Easy Steps!' headingClass='!max-w-[586px] !mx-auto lg:!mb-16 md:!mb-8 !mb-5'/>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center overflow-hidden">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 sm:gap-6 gap-4 justify-items-center overflow-hidden">
                     {EASY_STEPS.map((step, i) => (
                         <div
                             key={i}

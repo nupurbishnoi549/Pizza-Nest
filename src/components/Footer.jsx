@@ -4,7 +4,7 @@ import Heading from "./common/Heading";
 
 const Footer = () => {
     return (
-        <footer className="bg-white px-5 pt-20 pb-4 max-w-[1920px] mx-auto">
+        <footer className="bg-white px-5 md:pt-20 pt-16 pb-4 max-w-[1920px] mx-auto">
             <div className="max-w-[1140px] mx-auto border-b-[3px] border-b-[#D1D1D166] pb-8">
                 <div className="flex flex-col md:flex-row justify-between gap-10">
                     <div className="w-full lg:w-[558px]">

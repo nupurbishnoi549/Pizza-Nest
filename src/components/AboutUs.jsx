@@ -8,11 +8,14 @@ import SubHeading from './common/SubHeading';
 const AboutUs = () => {
     return (
         <div id='home' className='relative max-w-[1920px] mx-auto'>
-            <div className="pt-[100px] sm:pb-[149px] pb-[100px] px-5">
+            <div className="pt-[100px] md:pb-[149px] max-md:py-16 pb-[100px] px-5">
                 <div className="absolute inset-0 bg-layer-section z-0" />
                 <div className="relative z-10 max-w-[1114px] mx-auto w-full">
-                    <div className="flex flex-col lg:flex-row items-center lg:items-start gap-10 xl:gap-[133px] lg:gap-[47px]">
-                        <div className="flex flex-col items-center lg:items-start">
+                    <div className="flex flex-col lg:flex-row !items-center lg:items-start gap-10 xl:gap-[133px] lg:gap-[47px]">
+                        <div
+                            className="flex flex-col items-center lg:items-start"
+                            data-aos="fade-right"
+                        >
                             <div className="flex items-center gap-[6px] pb-2">
                                 <SubHeading subText="About Us" />
                                 <div className="h-px w-[60px] bg-gradient-to-r from-[#EC6112] to-[#FF902E] opacity-100"></div>
@@ -53,7 +56,10 @@ const AboutUs = () => {
                                 })}
                             </div>
                         </div>
-                        <div className="mt-8 lg:mt-0">
+                        <div
+                            className="mt-8 lg:mt-0"
+                            data-aos="fade-left"
+                        >
                             <img
                                 src={pizzaImg}
                                 alt="pizza"
@@ -63,7 +69,7 @@ const AboutUs = () => {
                     </div>
                 </div>
             </div>
-            <div className="absolute left-0 xl:bottom-2 lg:bottom-0 bottom-2">
+            <div className="absolute left-0 lg:bottom-[-8%] bottom-2">
                 <img
                     src={sliceImg}
                     alt="sliceImg"
