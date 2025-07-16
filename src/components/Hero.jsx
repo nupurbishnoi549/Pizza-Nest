@@ -15,7 +15,7 @@ const Hero = () => {
           <div className='lg:pt-[131px] sm:pt-14 py-8 lg:pl-[110px] sm:pl-6 pl-4'>
             <Heading headingText="Where Every Slice Feels Like Home" headingClass="text-white lg:max-w-[644px] max-w-[432px] lg:text-[64px] sm:text-[40px] max-sm:text-4xl font-bold" />
             <Description descriptionText="At Pizza Nest, we bake more than pizza — we bake comfort. Customize 
-          your perfect slice, or choose from our signature favorites" descriptionClass="lg:max-w-[588px] max-w-[432px] text-[#EFEFEF] pt-4" />
+          your perfect slice, or choose from our signature favorites" descriptionClass="lg:max-w-[532px] max-w-[432px] text-[#EFEFEF] pt-4" />
             <div className='pt-8 pb-6 flex gap-6'>
               <CustomButton btnText="Order Now" btnClass="max-sm:px-5" />
               <CustomButton
