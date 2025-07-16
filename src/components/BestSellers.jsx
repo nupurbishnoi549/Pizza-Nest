@@ -1,6 +1,6 @@
 import React from 'react';
 import { PIZZA_DATA } from '../utils/helper';
-import tomatoImg from '../assets/images/webp/tomato-img.png';
+import tomatoImg from '../assets/images/webp/tomato-img.webp';
 import SubHeading from './common/SubHeading';
 import CustomButton from './common/CustomButton';
 import Heading from './common/Heading';
@@ -11,7 +11,7 @@ const BestSellers = () => {
         <div id='customize' className=" py-[100px] relative px-5 bg-[#F8F8F880] max-w-[1920px] mx-auto">
             <div className="absolute inset-0 bg-layer-section z-0" />
             <div className='absolute z-10 right-0 xl:top-[-13%] sm:top-[-8%] top-[-5%] hidden md:block'>
-                <img src={tomatoImg} alt="tomatoImg" className='lg:w-[200px] w-[125px]' />
+                <img src={tomatoImg} alt="tomatoImg" className='lg:w-[200px] w-[125px] pointer-events-none' />
             </div>
             <div className="max-w-[1140px] relative z-10  mx-auto text-center">
                 <div className="flex items-center gap-[6px] justify-center pb-2">
@@ -31,7 +31,7 @@ const BestSellers = () => {
                                 <img
                                     src={pizza.img}
                                     alt={pizza.name}
-                                    className="w-[130px] rounded-full object-cover"
+                                    className="w-[130px] pointer-events-none rounded-full object-cover"
                                 />
                             </div>
                             <SubHeading subText={`₹${pizza.price}`} subClass='!text-custom-lg !font-semibold leading-140 !pb-[2px]' />

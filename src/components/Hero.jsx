@@ -7,7 +7,7 @@ import CustomButton from './common/CustomButton';
 const Hero = () => {
   return (
     <div className='lg:px-10 px-4 max-w-[1920px] mx-auto'>
-      <div className='max-w-[1360px]'>
+      <div className='max-w-[1360px] mx-auto'>
         <div
           className="w-full bg-cover bg-center bg-no-repeat lg:min-h-[710px] sm:min-h-[600px] min-h-[540px] rounded-3xl object-cover"
           style={{ backgroundImage: `url(${heroBgImg})` }}

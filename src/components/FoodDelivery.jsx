@@ -1,8 +1,8 @@
 import React from 'react';
-import deliveryImg from '../assets/images/webp/delivery-img.png';
+import deliveryImg from '../assets/images/webp/delivery-img.webp';
 import tickSvg from '../assets/images/svg/tick.svg';
 import { FEATURES } from '../utils/helper';
-import tomatoImg2 from '../assets/images/webp/tomato-img2.png';
+import tomatoImg2 from '../assets/images/webp/tomato-img2.webp';
 import SubHeading from './common/SubHeading';
 import CustomButton from './common/CustomButton';
 import Heading from './common/Heading';
@@ -11,7 +11,8 @@ import Description from './common/Description';
 const FoodDelivery = () => {
     return (
         <div className='relative max-w-[1920px] mx-auto'>
-            <div className="px-5 py-[100px] bg-[#FFF9F4] overflow-hidden">
+            <div className="absolute inset-0 bg-layer-section z-0" />
+            <div className="px-5 py-[100px] relative z-10 overflow-hidden">
                 <div className="max-w-[1140px] mx-auto">
                     <div className='w-full flex flex-col lg:flex-row items-center justify-between gap-10 lg:gap-9'>
                         <div className="max-w-[520px] text-center lg:text-left mx-auto lg:mx-0">
@@ -19,8 +20,8 @@ const FoodDelivery = () => {
                                 <SubHeading subText="Food Delivery" />
                                 <div className="h-px w-[60px] bg-gradient-to-r from-[#EC6112] to-[#FF902E] opacity-100"></div>
                             </div>
-                            <Heading headingText=' Fast, Fresh & Always On Time' headingClass='!mb-4 !text-near-black'/>
-                            <Description descriptionText='We deliver your favorite pizzas piping hot, just the way you love them — anywhere in town. From cheese-loaded bites to spicy paneer delights, your cravings are just a click away.' descriptionClass='!text-charcoal-gray !mb-3 !max-w-[540px]'/>
+                            <Heading headingText=' Fast, Fresh & Always On Time' headingClass='!mb-4 !text-near-black' />
+                            <Description descriptionText='We deliver your favorite pizzas piping hot, just the way you love them — anywhere in town. From cheese-loaded bites to spicy paneer delights, your cravings are just a click away.' descriptionClass='!text-charcoal-gray !mb-3 !max-w-[540px]' />
                             <div className="flex justify-center lg:justify-start">
                                 <ul className="text-primary-gray space-y-2 mb-6 text-left">
                                     {FEATURES.map((feature, index) => (
@@ -42,14 +43,14 @@ const FoodDelivery = () => {
                             <img
                                 src={deliveryImg}
                                 alt="Delivery"
-                                className="w-full h-auto"
+                                className="w-full h-auto pointer-events-none"
                             />
                         </div>
                     </div>
                 </div>
             </div>
-            <div className='absolute z-10 left-[-2%] xl:left-0 bottom-[-24%] hidden md:block'>
-                <img src={tomatoImg2} alt="tomatoImg" className='lg:w-[200px] w-[125px]' />
+            <div className='absolute z-10 left-[-2%] xl:left-0 xl:bottom-[-24%] lg:bottom-[-32%] hidden md:block'>
+                <img src={tomatoImg2} alt="tomatoImg" className='lg:w-[200px] w-[125px] pointer-events-none' />
             </div>
         </div>
     );

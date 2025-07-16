@@ -1,6 +1,6 @@
 import React from "react";
 import { GALLERY_IMAGES } from "../utils/helper";
-import sliceImg2 from '../assets/images/webp/slice2.png';
+import sliceImg2 from '../assets/images/webp/slice2.webp';
 import SubHeading from "./common/SubHeading";
 import CustomButton from "./common/CustomButton";
 import Heading from "./common/Heading";
@@ -23,7 +23,7 @@ const Gallery = () => {
                             <SubHeading subText="Our Gallery" />
                             <div className="h-[1px] w-[60px] bg-gradient-to-l from-[#EC6112] via-[#FF902E] to-transparent"></div>
                         </div>
-                        <Heading headingClass='!max-w-[558px] !mx-auto' headingText='A Glimpse Into Our Pizza World'/>
+                        <Heading headingClass='!max-w-[558px] !mx-auto' headingText='A Glimpse Into Our Pizza World' />
                     </div>
                     <div className="hidden xl:flex justify-between gap-6 mb-8">
                         <div className="flex flex-col gap-6 w-[267px]">

@@ -4,8 +4,8 @@ import { Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import { LeftArrow, RightArrow, ComaIcon, ComaIcon2 } from "../utils/Icons";
-import swiperPizza from '../assets/images/webp/swiper-pizza.png';
-import { AVATAR, TESTIMONIALS , PIZZA_IMAGES} from "../utils/helper";
+import swiperPizza from '../assets/images/webp/swiper-pizza.webp';
+import { AVATAR, TESTIMONIALS, PIZZA_IMAGES } from "../utils/helper";
 import SubHeading from "./common/SubHeading";
 import Heading from "./common/Heading";
 

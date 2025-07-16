@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { CRAVINGS_MENU, MENU_CATEGORIES } from '../utils/helper';
-import sliceImg from '../assets/images/webp/slice-img.png';
+import sliceImg from '../assets/images/webp/slice-img.webp';
 import SubHeading from './common/SubHeading';
 import CustomButton from './common/CustomButton';
 import Heading from './common/Heading';
@@ -29,7 +29,7 @@ const Cravings = () => {
                 <img
                     src={sliceImg}
                     alt="sliceImg"
-                    className="xl:w-[195px] sm:w-[140px] w-[100px] animate-bounce [animation-duration:2.5s]"
+                    className="xl:w-[195px] sm:w-[140px] pointer-events-none w-[100px] animate-bounce [animation-duration:2.5s]"
                 />
             </div>
             <div className='px-5 py-[100px]'>
@@ -38,32 +38,31 @@ const Cravings = () => {
                         <div className="h-[1px] w-[60px] bg-gradient-to-r from-[#EC6112] via-[#FF902E] to-transparent"></div>
                         <SubHeading subText="Our Menu" />
                         <div className="h-[1px] w-[60px] bg-gradient-to-l from-[#EC6112] via-[#FF902E] to-transparent"></div>
-                    </div>  
-                    <Heading headingClass='!max-w-[490px] !mx-auto !text-center' headingText='Explore Flavours, Pick Your Cravings'/>
-                   <div className="flex flex-wrap items-center justify-center gap-3 mt-10">
-  {MENU_CATEGORIES.map((tab, idx) => (
-    <button
-      key={tab.name}
-      onClick={() => setActive(idx)}
-      className={`sm:w-[170px] max-sm:w-[140px] py-2 rounded-xl font-semibold text-base border
-        ${
-          active === idx
-            ? "bg-gradient-to-r from-[#FC8B44] to-[#FF902E] text-white shadow border-transparent"
-            : "bg-white text-light-gray border-[#C1C1C1] hover:bg-[#FFF3EA] hover:text-[#FC8B44] hover:border-[#FC8B44]"
-        }
+                    </div>
+                    <Heading headingClass='!max-w-[490px] !mx-auto !text-center' headingText='Explore Flavours, Pick Your Cravings' />
+                    <div className="flex flex-wrap items-center justify-center gap-3 mt-10">
+                        {MENU_CATEGORIES.map((tab, idx) => (
+                            <button
+                                key={tab.name}
+                                onClick={() => setActive(idx)}
+                                className={`sm:w-[170px] max-sm:w-[140px] py-2 rounded-xl font-semibold text-base border
+        ${active === idx
+                                        ? "bg-gradient-to-r from-[#FC8B44] to-[#FF902E] text-white shadow border-transparent"
+                                        : "bg-white text-light-gray border-[#C1C1C1] hover:bg-[#FFF3EA] hover:text-[#FC8B44] hover:border-[#FC8B44]"
+                                    }
         cursor-pointer transition duration-150 ease-in-out`}
-    >
-      {tab.name}
-    </button>
-  ))}
-</div>
+                            >
+                                {tab.name}
+                            </button>
+                        ))}
+                    </div>
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-10 justify-items-center md:[&>*:nth-child(3)]:col-span-2 md:[&>*:nth-child(3)]:justify-self-center lg:[&>*:nth-child(3)]:col-span-1 lg:[&>*:nth-child(3)]:justify-self-auto">
                         {cardData.map((item, idx) => (
                             <div key={item.title + idx} className="flex flex-col items-center w-full max-w-[364px]">
                                 <img
                                     src={item.img}
                                     alt={item.title}
-                                    className="w-full h-[292px] object-cover rounded-t-[8px]"
+                                    className="w-full h-[292px] pointer-events-none object-cover rounded-t-[8px]"
                                 />
                                 <div className="relative bg-white border border-[#00000014] rounded-[8px] w-full max-w-[324px] h-[192px] flex flex-col items-center text-center p-5 -mt-9 shadow">
                                     <div className="flex gap-2 justify-center mb-2">
@@ -105,7 +104,7 @@ const Cravings = () => {
                         ))}
                     </div>
                     <div className="flex justify-center mt-8">
-                        <CustomButton btnText="View More" btnClass='!py-[17px]'/>
+                        <CustomButton btnText="View More" btnClass='!py-[17px]' />
                     </div>
                 </div>
             </div>

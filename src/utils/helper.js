@@ -1,25 +1,25 @@
-import { ProfessionalChef, BestQualityFood, OnlineSupport,ChooseIcon,OrderIcon,TrackIcon,FacebookIcon,InstagramIcon,LinkdinIcon} from "./Icons";
-import pizzaImg1 from '../assets/images/webp/pizza-img.png';
-import pizzaImg2 from '../assets/images/webp/pizza-img2.png';
-import tandooriPizza from '../assets/images/webp/tandoori-pizza.png';
-import cheesePizza from '../assets/images/webp/cheese-pizza.png';
-import veggiePizza from '../assets/images/webp/veggie-pizza.png';
-import masalaPizza from '../assets/images/webp/masala-pizza.png';
-import farmhousePizza from '../assets/images/webp/farmhouse-pizza.png';
-import pannerPizza from '../assets/images/webp/panner-pizza.png';
-import soloMeal from '../assets/images/webp/solo-meal.png';
-import galleryImg1 from '../assets/images/webp/gallery-img1.png';
-import galleryImg2 from '../assets/images/webp/gallery-img2.png';
-import galleryImg3 from '../assets/images/webp/gallery-img3.png';
-import galleryImg4 from '../assets/images/webp/gallery-img4.png';
-import galleryImg5 from '../assets/images/webp/gallery-img5.png';
-import galleryImg6 from '../assets/images/webp/gallery-img6.png';
-import galleryImg7 from '../assets/images/webp/gallery-img7.png';
-import swiperImg1 from '../assets/images/webp/swiper-img1.png';
-import swiperImg2 from '../assets/images/webp/swiper-img2.png';
-import swiperImg3 from '../assets/images/webp/swiper-img3.png';
-import swiperPizza from '../assets/images/webp/swiper-pizza.png';
- 
+import { ProfessionalChef, BestQualityFood, OnlineSupport, ChooseIcon, OrderIcon, TrackIcon, FacebookIcon, InstagramIcon, LinkdinIcon } from "./Icons";
+import pizzaImg1 from '../assets/images/webp/pizza-img.webp';
+import pizzaImg2 from '../assets/images/webp/pizza-img2.webp';
+import tandooriPizza from '../assets/images/webp/tandoori-pizza.webp';
+import cheesePizza from '../assets/images/webp/cheese-pizza.webp';
+import veggiePizza from '../assets/images/webp/veggie-pizza.webp';
+import masalaPizza from '../assets/images/webp/masala-pizza.webp';
+import farmhousePizza from '../assets/images/webp/farmhouse-pizza.webp';
+import pannerPizza from '../assets/images/webp/panner-pizza.webp';
+import soloMeal from '../assets/images/webp/solo-meal.webp';
+import galleryImg1 from '../assets/images/webp/gallery-img1.webp';
+import galleryImg2 from '../assets/images/webp/gallery-img2.webp';
+import galleryImg3 from '../assets/images/webp/gallery-img3.webp';
+import galleryImg4 from '../assets/images/webp/gallery-img4.webp';
+import galleryImg5 from '../assets/images/webp/gallery-img5.webp';
+import galleryImg6 from '../assets/images/webp/gallery-img6.webp';
+import galleryImg7 from '../assets/images/webp/gallery-img7.webp';
+import swiperImg1 from '../assets/images/webp/swiper-img1.webp';
+import swiperImg2 from '../assets/images/webp/swiper-img2.webp';
+import swiperImg3 from '../assets/images/webp/swiper-img3.webp';
+import swiperPizza from '../assets/images/webp/swiper-pizza.webp';
+
 
 export const NAV_ITEMS = [
     { label: 'Home', link: '#home' },
@@ -149,8 +149,8 @@ export const GALLERY_IMAGES = [
     { img: galleryImg2 },
     { img: galleryImg3 },
     { img: galleryImg4 },
-    { img: galleryImg5},
-    { img: galleryImg6},
+    { img: galleryImg5 },
+    { img: galleryImg6 },
     { img: galleryImg7 },
 ];
 export const AVATAR = [
@@ -159,7 +159,7 @@ export const AVATAR = [
     swiperImg3
 ]
 export const TESTIMONIALS = [
-      {
+    {
         text: "The Masala Paneer Pizza was bursting with flavor! The paneer was perfectly marinated in Indian spices, and the balance of onions, capsicum, and cheese was spot on. It tasted like my favorite desi snack—just in pizza form! Super satisfying and definitely ordering again.",
         name: "Aarav Mehta",
         role: "Software Developer",

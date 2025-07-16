@@ -9,7 +9,7 @@
 @import "tailwindcss";
 
 @theme {
-  --text-custom-base:28px;
+  --text-custom-base: 28px;
   --text-custom-lg: 32px;
   --text-custom-xl: 34px;
   --text-custom-2xl: 42px;
@@ -38,7 +38,7 @@
     linear-gradient(0.29deg,
       rgba(248, 248, 248, 0.5) 0.25%,
       rgba(254, 254, 254, 0.5) 99.75%),
-    url('./assets/images/webp/bg-layer.png');
+    url('./assets/images/webp/bg-layer.webp');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -50,11 +50,11 @@
 }
 
 .buy-one-bg {
-  background-image: url('../src/assets/images/webp/buy-one-img.png');
+  background-image: url('../src/assets/images/webp/buy-one-img.webp');
 }
 
 .craving-something-bg {
-  background-image: url('../src/assets/images/webp/bg-img.png');
+  background-image: url('../src/assets/images/webp/bg-img.webp');
 }
 
 .box-shadow {
@@ -73,8 +73,10 @@
 .group svg path {
   stroke: black;
 }
+
 .gallery-hover {
   transition: all 0.3s ease-in-out;
+  pointer-events: none;
 }
 
 .gallery-hover:hover {

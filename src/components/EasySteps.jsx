@@ -14,7 +14,7 @@ const EasySteps = () => {
                     <div className="h-[1px] w-[60px] bg-gradient-to-l from-[#EC6112] via-[#FF902E] to-transparent"></div>
                 </div>
                 <Heading headingText='Your Perfect Pizza in Just 3 Easy Steps!' headingClass='!max-w-[586px] !mx-auto lg:!mb-16 md:!mb-8 !mb-5'/>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center overflow-hidden">
                     {EASY_STEPS.map((step, i) => (
                         <div
                             key={i}

@@ -1,8 +1,8 @@
 import React from 'react';
 import Heading from './common/Heading';
 import { CARD_ITEMS } from '../utils/helper';
-import pizzaImg from '../assets/images/webp/pizza-man-img.png';
-import sliceImg from '../assets/images/webp/slice-img.png';
+import pizzaImg from '../assets/images/webp/pizza-man-img.webp';
+import sliceImg from '../assets/images/webp/slice-img.webp';
 import SubHeading from './common/SubHeading';
 
 const AboutUs = () => {
@@ -14,7 +14,7 @@ const AboutUs = () => {
                     <div className="flex flex-col lg:flex-row items-center lg:items-start gap-10 xl:gap-[133px] lg:gap-[47px]">
                         <div className="flex flex-col items-center lg:items-start">
                             <div className="flex items-center gap-[6px] pb-2">
-                                <SubHeading subText="About Us"/>
+                                <SubHeading subText="About Us" />
                                 <div className="h-px w-[60px] bg-gradient-to-r from-[#EC6112] to-[#FF902E] opacity-100"></div>
                             </div>
                             <Heading headingText="Welcome to the Nest" headingClass="text-center lg:text-left" />
@@ -57,7 +57,7 @@ const AboutUs = () => {
                             <img
                                 src={pizzaImg}
                                 alt="pizza"
-                                className="w-full xl:max-w-[423px] max-w-[376px] mx-auto"
+                                className="w-full xl:max-w-[423px] pointer-events-none max-w-[376px] mx-auto"
                             />
                         </div>
                     </div>
@@ -67,7 +67,7 @@ const AboutUs = () => {
                 <img
                     src={sliceImg}
                     alt="sliceImg"
-                    className="xl:w-[180px] sm:w-[140px] w-[100px] animate-bounce [animation-duration:2.5s]"
+                    className="xl:w-[180px] sm:w-[140px] w-[100px] pointer-events-none animate-bounce [animation-duration:2.5s]"
                 />
             </div>
         </div>

@@ -28,7 +28,7 @@ const Header = () => {
     }, []);
 
     return (
-        <div className='px-6 pt-6 pb-[22px] bg-off-white relative'>
+        <div className='px-6 pt-6 pb-[22px] bg-off-white relative max-w-[1920px] mx-auto'>
             <div className='flex justify-between items-center max-w-[1130px] mx-auto'>
                 <div>
                     <a href="#home" className="inline-block">
