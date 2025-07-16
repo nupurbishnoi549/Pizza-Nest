@@ -8,16 +8,16 @@ const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     return (
         <>
-            <div className='flex justify-between items-center px-6 py-4 bg-off-white max-w-[1130px] mx-auto relative'>
+            <div className='flex justify-between items-center px-6 py-6 bg-off-white max-w-[1130px] mx-auto relative'>
                 <div>
                     <a href="#home" className="inline-block">
                         <Heading
                             headingText="Pizza Nest"
-                            headingClass="!font-medium !text-[34px] text-prime-gradient"
+                            headingClass="!font-medium !text-custom-xl bg-gradient-to-r from-[#EC6112] to-[#FF902E] bg-clip-text text-transparent"
                         />
                     </a>
                 </div>
-                <nav className="hidden min-[900px]:flex gap-6 ff-nunito text-muted-gray text-base leading-[160%]">
+                <nav className="hidden min-[900px]:flex gap-6 ff-nunito text-muted-gray text-base leading-160">
                     {NAV_ITEMS.map((item, index) => (
                         <a
                             key={index}

@@ -18,17 +18,21 @@ const Hero = () => {
           your perfect slice, or choose from our signature favorites" descriptionClass="lg:max-w-[588px] max-w-[432px] text-[#EFEFEF] pt-4" />
             <div className='pt-8 pb-6 flex gap-6'>
               <CustomButton btnText="Order Now" btnClass="max-sm:px-5" />
-              <CustomButton btnText="View Full Menu" btnClass="bg-white backdrop-blur-[30.9px] max-sm:px-5" />
+              <CustomButton
+                btnText="View Full Menu"
+                btnClass="!bg-none !border-white border !backdrop-blur-[30.9px] !text-white !shadow-none  max-sm:!px-5 "
+              />
+
             </div>
             <div className="flex flex-wrap gap-10 max-sm:gap-6 items-center">
               <div className="text-center">
-                <Description descriptionText="5,000+" descriptionClass="text-[28px] text-white font-semibold !leading-[120%]" />
-                <Description descriptionText="Pizzas Delivered" descriptionClass="text-[#E1E1E1] font-semibold pt-[2px] !leading-[120%]" />
+                <Description descriptionText="5,000+" descriptionClass="text-custom-base text-white font-semibold !leading-120" />
+                <Description descriptionText="Pizzas Delivered" descriptionClass="text-[#E1E1E1] font-semibold pt-[2px] !leading-120" />
               </div>
               <div className="h-[48px] w-[1px] bg-[#D5D5D5] max-sm:hidden"></div>
               <div className="text-center">
-                <Description descriptionText="98%" descriptionClass="text-[28px] text-white font-semibold !leading-[120%]" />
-                <Description descriptionText="Happy Customers" descriptionClass="text-[#E1E1E1] font-semibold pt-[2px] !leading-[120%]" />
+                <Description descriptionText="98%" descriptionClass="text-custom-base text-white font-semibold !leading-120" />
+                <Description descriptionText="Happy Customers" descriptionClass="text-[#E1E1E1] font-semibold pt-[2px] !leading-120" />
               </div>
             </div>
           </div>

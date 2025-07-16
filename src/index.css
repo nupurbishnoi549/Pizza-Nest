@@ -6,93 +6,33 @@
   scroll-behavior: smooth;
 }
 
-:root {
+@import "tailwindcss";
+
+@theme {
+  --text-custom-base:28px;
+  --text-custom-lg: 32px;
+  --text-custom-xl: 34px;
+  --text-custom-2xl: 42px;
+  --text-custom-4xl: 56px;
+  --text-custom-6xl: 64px;
   --color-soft-gray: #E8E8E8;
   --color-off-white: #FEFEFE;
   --color-near-black: #010101;
   --color-mid-gray: #575757;
   --color-light-gray: #C1C1C1;
+  --color-deep-gray: #474747;
   --color-dark-gray: #4D4D4D;
   --color-muted-gray: #787878;
-  --primary-dark: #373737;
+  --color-charcoal-gray: #373737;
+  --color-slate-gray: #565656;
   --text-dark: #5C5C5C;
-  /* newly added */
-  --color-prime-gradient: linear-gradient(85.95deg, #EC6112 1.54%, #FF902E 98.46%);
+  --leading-100: 100%;
+  --leading-120: 120%;
+  --leading-140: 140%;
+  --leading-150: 150%;
+  --leading-160: 160%;
 }
 
-/* ---------- CUSTOM BACKGROUND COLOR CLASSES ---------- */
-.bg-soft-gray {
-  background-color: var(--color-soft-gray);
-}
-
-.bg-off-white {
-  background-color: var(--color-off-white);
-}
-
-.bg-near-black {
-  background-color: var(--color-near-black);
-}
-
-.bg-mid-gray {
-  background-color: var(--color-mid-gray);
-}
-
-.bg-light-gray {
-  background-color: var(--color-light-gray);
-}
-
-.bg-dark-gray {
-  background-color: var(--color-dark-gray);
-}
-
-.bg-prime-gradient {
-  background: var(--color-prime-gradient);
-}
-
-
-/* ---------- CUSTOM TEXT COLOR CLASSES ---------- */
-.text-soft-gray {
-  color: var(--color-soft-gray);
-}
-
-.text-off-white {
-  color: var(--color-off-white);
-}
-
-.text-near-black {
-  color: var(--color-near-black);
-}
-
-.text-mid-gray {
-  color: var(--color-mid-gray);
-}
-
-.text-light-gray {
-  color: var(--color-light-gray);
-}
-
-.text-dark-gray {
-  color: var(--color-dark-gray);
-}
-.text-primary-gray {
-  color: var(--primary-dark);
-}
-.text-dark {
-  color: var(--text-dark);
-}
-
-.text-muted-gray {
-  color: var(--color-muted-gray);
-}
-
-.text-prime-gradient {
-  background: var(--color-prime-gradient);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.text-dark {
-  color: var(--text-dark);
-}
 .bg-layer-section {
   background-image:
     linear-gradient(0.29deg,
@@ -106,9 +46,30 @@
 }
 
 .shadow-orange-custom {
-    box-shadow: 0px 1px 7px 0px #F67A211F;
+  box-shadow: 0px 1px 7px 0px #F67A211F;
 }
 
-.buy-one-bg{
+.buy-one-bg {
   background-image: url('../src/assets/images/webp/buy-one-img.png');
+}
+
+.craving-something-bg {
+  background-image: url('../src/assets/images/webp/bg-img.png');
+}
+
+.box-shadow {
+  box-shadow: 0px 4px 15.4px 0px #0000000F;
+}
+
+.hover\:bg-gradient-orange:hover {
+  background: linear-gradient(85.95deg, #EC6112 1.54%, #FF902E 98.46%);
+  color: white;
+}
+
+.group:hover svg path {
+  stroke: white;
+}
+
+.group svg path {
+  stroke: black;
 }

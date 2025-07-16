@@ -2,20 +2,19 @@ import React from 'react';
 import Heading from './common/Heading';
 import { CARD_ITEMS } from '../utils/helper';
 import pizzaImg from '../assets/images/webp/pizza-man-img.png';
-import sliceImg from '../assets/images/webp/slice-img.png'
+import sliceImg from '../assets/images/webp/slice-img.png';
+import SubHeading from './common/SubHeading';
 
 const AboutUs = () => {
     return (
-        <div>
-            <div className="relative pt-[100px] sm:pb-[149px] pb-[100px] px-5">
+        <div className='relative'>
+            <div className="pt-[100px] sm:pb-[149px] pb-[100px] px-5">
                 <div className="absolute inset-0 bg-layer-section z-0" />
                 <div className="relative z-10 max-w-[1114px] mx-auto w-full">
                     <div className="flex flex-col lg:flex-row items-center lg:items-start gap-10 xl:gap-[133px] lg:gap-[47px]">
                         <div className="flex flex-col items-center lg:items-start">
                             <div className="flex items-center gap-[6px] pb-2">
-                                <p className="font-bold text-lg bg-gradient-to-r from-[#EC6112] to-[#FF902E] bg-clip-text text-transparent whitespace-nowrap">
-                                    About Us
-                                </p>
+                                <SubHeading subText="About Us"/>
                                 <div className="h-px w-[60px] bg-gradient-to-r from-[#EC6112] to-[#FF902E] opacity-100"></div>
                             </div>
 
@@ -40,7 +39,7 @@ const AboutUs = () => {
                                         <div
                                             key={index}
                                             className={`w-[170px] h-[122px] rounded-[12px] border border-dashed border-[#f67a21]/50 
-              p-4 flex flex-col items-center justify-center text-center bg-white 
+              p-[14px] flex flex-col items-center justify-center text-center bg-white 
               shadow-orange-custom transition-all duration-300 ease-in-out 
               hover:shadow-md hover:-translate-y-1 ${paddingTopClass}`}
                                         >
@@ -48,7 +47,7 @@ const AboutUs = () => {
                                             <div className="text-[52px] text-transparent bg-clip-text bg-gradient-to-r from-[#EC6112] to-[#FF902E] mb-2">
                                                 <Icon />
                                             </div>
-                                            <p className="text-dark-gray text-sm font-semibold leading-[120%]">
+                                            <p className="text-deep-gray font-semibold leading-120">
                                                 {item.label}
                                             </p>
                                         </div>
@@ -66,9 +65,13 @@ const AboutUs = () => {
                     </div>
                 </div>
             </div>
-            {/* <div className="absolute left-0 bottom-[-134%] max-[1024px]:bottom-[-73%] min-[1025px]:bottom-[-72%] min-[1280px]:bottom-[-70%]">
-                <img src={sliceImg} alt="slice" className="w-[180px] sm:w-[220px] xl:w-[220px] xl:h-[254px]" />
-            </div> */}
+            <div className="absolute left-0 xl:bottom-2 lg:bottom-0 bottom-2">
+                <img
+                    src={sliceImg}
+                    alt="sliceImg"
+                    className="xl:w-[180px] w-[140px] animate-bounce [animation-duration:2.5s]"
+                />
+            </div>
         </div>
 
     );

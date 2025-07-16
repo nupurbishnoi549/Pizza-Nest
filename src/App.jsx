@@ -7,6 +7,11 @@ import BestSellers from './components/BestSellers';
 import Cravings from './components/Cravings';
 import LimitedOffer from './components/LimitedOffer';
 import FoodDelivery from './components/FoodDelivery';
+import EasySteps from './components/EasySteps';
+import Gallery from './components/Gallery';
+import Testimonial from './components/Testimonial';
+import CravingSomething from './components/CravingSomething';
+import Footer from './components/Footer';
 
 const App = () => {
   return (
@@ -18,7 +23,12 @@ const App = () => {
       <BestSellers />
       <Cravings />
       <LimitedOffer />
-      <FoodDelivery/>
+      <FoodDelivery />
+      <EasySteps />
+      <Testimonial/>
+      <Gallery />
+      <CravingSomething />
+      <Footer/>
     </>
   )
 }

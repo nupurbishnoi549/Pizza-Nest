@@ -15,9 +15,9 @@ const Pizza = () => {
                             }}
                         >
 
-                            <p className="text-[28px] font-normal text-prime-gradient leading-[160%]">{item.topText}</p>
-                            <h3 className="sm:text-4xl text-2xl font-semibold leading-[160%]">{item.middleText}</h3>
-                            <p className="text-xl font-normal leading-[160%]">{item.bottomText}</p>
+                            <p className="text-custom-base font-normal text-prime-gradient leading-160">{item.topText}</p>
+                            <h3 className="sm:text-4xl text-2xl font-semibold leading-160">{item.middleText}</h3>
+                            <p className="text-xl font-normal leading-160">{item.bottomText}</p>
                             <button className="mt-4 px-4 py-2 bg-[#EC6112] leading-[100%] text-white rounded hover:bg-[#FF902E] cursor-pointer transition-all duration-300">
                                 {item.buttonText}
                             </button>
