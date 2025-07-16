@@ -6,9 +6,30 @@ import { HiMenu, HiX } from 'react-icons/hi';
 
 const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    useEffect(() => {
+        if (isMenuOpen) {
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = '';
+        }
+
+        return () => {
+            document.body.style.overflow = '';
+        };
+    }, [isMenuOpen]);
+    useEffect(() => {
+        const handleResize = () => {
+            if (window.innerWidth >= 900) {
+                setIsMenuOpen(false);
+            }
+        };
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
+
     return (
-        <>
-            <div className='flex justify-between items-center px-6 py-6 bg-off-white max-w-[1130px] mx-auto relative'>
+        <div className='px-6 pt-6 pb-[22px] bg-off-white relative'>
+            <div className='flex justify-between items-center max-w-[1130px] mx-auto'>
                 <div>
                     <a href="#home" className="inline-block">
                         <Heading
@@ -29,7 +50,7 @@ const Header = () => {
                     ))}
                 </nav>
                 <div className="hidden min-[900px]:block">
-                    <CustomButton btnText="Contact Us" btnClass="" />
+                    <CustomButton btnText="Contact Us" btnClass="!py-[17.5px]" />
                 </div>
                 <button
                     className="min-[900px]:hidden text-3xl text-prime z-20"
@@ -41,9 +62,9 @@ const Header = () => {
             </div>
             <div
                 className={`
-                    fixed inset-0 bg-off-white z-50 flex flex-col items-center justify-center transition-transform duration-500 ease-in-out
-                    ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'}
-                `}
+          fixed inset-0 bg-off-white z-50 flex flex-col items-center justify-center transition-transform duration-500 ease-in-out
+          ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'}
+        `}
             >
                 <button
                     className="absolute top-4 right-6 text-4xl text-prime"
@@ -66,10 +87,8 @@ const Header = () => {
 
                     <CustomButton btnText="Contact Us" btnClass="mt-4" />
                 </nav>
-
-
             </div>
-        </>
+        </div>
     );
 };
 

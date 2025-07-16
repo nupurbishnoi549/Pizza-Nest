@@ -4,11 +4,13 @@ import tickSvg from '../assets/images/svg/tick.svg';
 import { FEATURES } from '../utils/helper';
 import tomatoImg2 from '../assets/images/webp/tomato-img2.png';
 import SubHeading from './common/SubHeading';
-
+import CustomButton from './common/CustomButton';
+import Heading from './common/Heading';
+import Description from './common/Description';
 
 const FoodDelivery = () => {
     return (
-        <div className='relative'>
+        <div className='relative max-w-[1920px] mx-auto'>
             <div className="px-5 py-[100px] bg-[#FFF9F4] overflow-hidden">
                 <div className="max-w-[1140px] mx-auto">
                     <div className='w-full flex flex-col lg:flex-row items-center justify-between gap-10 lg:gap-9'>
@@ -17,14 +19,8 @@ const FoodDelivery = () => {
                                 <SubHeading subText="Food Delivery" />
                                 <div className="h-px w-[60px] bg-gradient-to-r from-[#EC6112] to-[#FF902E] opacity-100"></div>
                             </div>
-
-                            <h2 className="font-bold text-4xl md:text-5xl text-[#1E1E1E] leading-tight mb-4">
-                                Fast, Fresh & Always On Time
-                            </h2>
-
-                            <p className="text-primary-gray font-normal text-base leading-160 mb-3 max-w-[540px]">
-                                We deliver your favorite pizzas piping hot, just the way you love them — anywhere in town. From cheese-loaded bites to spicy paneer delights, your cravings are just a click away.
-                            </p>
+                            <Heading headingText=' Fast, Fresh & Always On Time' headingClass='!mb-4 !text-near-black'/>
+                            <Description descriptionText='We deliver your favorite pizzas piping hot, just the way you love them — anywhere in town. From cheese-loaded bites to spicy paneer delights, your cravings are just a click away.' descriptionClass='!text-charcoal-gray !mb-3 !max-w-[540px]'/>
                             <div className="flex justify-center lg:justify-start">
                                 <ul className="text-primary-gray space-y-2 mb-6 text-left">
                                     {FEATURES.map((feature, index) => (
@@ -39,9 +35,7 @@ const FoodDelivery = () => {
                                 </ul>
                             </div>
                             <div className="flex justify-center lg:justify-start">
-                                <button className="bg-[#FC8B44] text-white font-semibold rounded-md px-8 py-3 hover:bg-[#E86E1D] transition duration-200">
-                                    Order Now
-                                </button>
+                                <CustomButton btnText="Order Now" btnClass='!py-[17px]' />
                             </div>
                         </div>
                         <div className="max-w-[612px] w-full">
@@ -54,8 +48,8 @@ const FoodDelivery = () => {
                     </div>
                 </div>
             </div>
-            <div className='absolute z-10 left-[-2%] xl:left-0  bottom-[-24%]'>
-                <img src={tomatoImg2} alt="tomatoImg" className='sm:w-[200px] w-[125px]' />
+            <div className='absolute z-10 left-[-2%] xl:left-0 bottom-[-24%] hidden md:block'>
+                <img src={tomatoImg2} alt="tomatoImg" className='lg:w-[200px] w-[125px]' />
             </div>
         </div>
     );

@@ -1,19 +1,19 @@
 import React from 'react';
 import { EASY_STEPS } from '../utils/helper';
 import SubHeading from './common/SubHeading';
+import Heading from './common/Heading';
+import CustomButton from './common/CustomButton';
 
 const EasySteps = () => {
     return (
-        <div className="px-5 py-[100px]">
+        <div className="px-5 py-[100px] max-w-[1920px] mx-auto">
             <div className="max-w-[1140px] mx-auto text-center">
                 <div className="flex items-center gap-[6px] justify-center pb-2">
                     <div className="h-[1px] w-[60px] bg-gradient-to-r from-[#EC6112] via-[#FF902E] to-transparent"></div>
                     <SubHeading subText="How It Works" />
                     <div className="h-[1px] w-[60px] bg-gradient-to-l from-[#EC6112] via-[#FF902E] to-transparent"></div>
                 </div>
-                <h2 className="text-5xl max-w-[586px] mx-auto font-bold text-black leading-120 mb-16">
-                    Your Perfect Pizza in Just 3 Easy Steps!
-                </h2>
+                <Heading headingText='Your Perfect Pizza in Just 3 Easy Steps!' headingClass='!max-w-[586px] !mx-auto lg:!mb-16 md:!mb-8 !mb-5'/>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center">
                     {EASY_STEPS.map((step, i) => (
                         <div
@@ -30,10 +30,7 @@ const EasySteps = () => {
                             <p className="text-base font-normal leading-160 text-[#555] mb-3 max-w-[306px]">
                                 {step.desc}
                             </p>
-
-                            <button className="bg-[#FC8B44] hover:bg-[#E86E1D] text-white text-[16px] font-semibold rounded-[8px] px-6 py-2 transition duration-300 ease-in-out">
-                                View Menu
-                            </button>
+                            <CustomButton btnText=' View Menu' btnClass='!px-4 !py-3'/>
                             {i < EASY_STEPS.length - 1 && (
                                 <div className="hidden lg:block absolute top-[55px] right-[-30%]">
 

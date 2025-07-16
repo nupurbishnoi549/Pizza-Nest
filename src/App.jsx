@@ -12,6 +12,7 @@ import Gallery from './components/Gallery';
 import Testimonial from './components/Testimonial';
 import CravingSomething from './components/CravingSomething';
 import Footer from './components/Footer';
+import BackToTop from './components/BackToTop';
 
 const App = () => {
   return (
@@ -28,7 +29,8 @@ const App = () => {
       <Testimonial/>
       <Gallery />
       <CravingSomething />
-      <Footer/>
+      <Footer />
+      <BackToTop/>
     </>
   )
 }

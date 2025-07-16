@@ -3,33 +3,23 @@ import tastyImg from '../assets/images/webp/tasty-img.png';
 import grassImg from '../assets/images/webp/grass-img.png';
 import grassImg2 from '../assets/images/webp/grass-img2.png';
 import SubHeading from '../components/common/SubHeading';
+import CustomButton from './common/CustomButton';
+import Heading from './common/Heading';
 
 const LimitedOffer = () => {
     return (
-        <div
-            className="buy-one-bg bg-cover bg-no-repeat relative"
-        >
+        <div id='about' className="buy-one-bg bg-cover bg-no-repeat relative max-w-[1920px] mx-auto">
             <div className="absolute top-0 right-0 hidden lg:block">
                 <img src={grassImg2} alt="grassImg" className="w-[100px]" />
             </div>
-
             <div className='py-10 px-5 sm:px-10 md:px-[50px] xl:pl-[150px] lg:pl-[100px] lg:pr-18 xl:pr-[95px]'>
                 <div className="max-w-[1194px] mx-auto">
                     <div className="flex flex-col lg:flex-row items-center gap-8">
                         <div className="text-center lg:text-left">
-                            {/* <h2 className="font-semibold text-[22px] sm:text-[24px] md:text-[26px] text-prime-gradient leading-140">
-                                Buy 1 Pizza, Get 1 Free!
-                            </h2> */}
-                            <SubHeading subText='Buy 1 Pizza, Get 1 Free!' subClass='!text-custom-base'/>
-                            <h2 className="text-white font-semibold text-custom-xl sm:text-[42px] md:text-[50px] lg:text-5xl xl:text-[56px] pt-[2px] leading-140">
-                                Medium & Large pizzas
-                            </h2>
-                            <h2 className="font-semibold text-[22px] sm:text-[24px] md:text-[26px] text-prime-gradient leading-140">
-                                Limited Offer
-                            </h2>
-                            <button className="bg-[#FC8B44] text-white rounded-md px-6 py-2 mt-4 font-semibold hover:bg-[#E86E1D] transition">
-                                Order Now
-                            </button>
+                            <SubHeading subText='Buy 1 Pizza, Get 1 Free!' subClass='md:!text-custom-base !text-xl leading-140'/>
+                            <Heading headingText='Medium & Large pizzas' headingClass='!text-white xl:!text-custom-4xl xl:!w-[597px] !pt-[2px] !leading-140'/>
+                            <SubHeading subText='Limited Offer' subClass='md:!text-custom-base !text-xl leading-140' />
+                            <CustomButton btnText="Order Now" btnClass='!py-[17px] !mt-4'/>
                         </div>
                         <div className="w-full max-w-[595px]">
                             <img src={tastyImg} alt="tasty pizza" className="w-full h-auto object-contain" />

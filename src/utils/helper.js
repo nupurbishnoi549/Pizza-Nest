@@ -18,6 +18,7 @@ import galleryImg7 from '../assets/images/webp/gallery-img7.png';
 import swiperImg1 from '../assets/images/webp/swiper-img1.png';
 import swiperImg2 from '../assets/images/webp/swiper-img2.png';
 import swiperImg3 from '../assets/images/webp/swiper-img3.png';
+import swiperPizza from '../assets/images/webp/swiper-pizza.png';
  
 
 export const NAV_ITEMS = [
@@ -175,6 +176,8 @@ export const TESTIMONIALS = [
         role: "Software Developer",
     },
 ];
+export const PIZZA_IMAGES = [swiperPizza, swiperPizza, swiperPizza];
+
 export const QUICK_LINKS = ["Home", "About Us", "Menu", "Gallery", "Testimonial", "Contact"];
 export const SUPPORT_LINKS = ["Terms & Conditions", "Privacy Policy"];
 export const SOCIAL_ICON = [

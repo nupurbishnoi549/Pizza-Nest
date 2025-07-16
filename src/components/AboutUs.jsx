@@ -7,7 +7,7 @@ import SubHeading from './common/SubHeading';
 
 const AboutUs = () => {
     return (
-        <div className='relative'>
+        <div id='home' className='relative max-w-[1920px] mx-auto'>
             <div className="pt-[100px] sm:pb-[149px] pb-[100px] px-5">
                 <div className="absolute inset-0 bg-layer-section z-0" />
                 <div className="relative z-10 max-w-[1114px] mx-auto w-full">
@@ -17,10 +17,8 @@ const AboutUs = () => {
                                 <SubHeading subText="About Us"/>
                                 <div className="h-px w-[60px] bg-gradient-to-r from-[#EC6112] to-[#FF902E] opacity-100"></div>
                             </div>
-
                             <Heading headingText="Welcome to the Nest" headingClass="text-center lg:text-left" />
-
-                            <ul className="list-disc text-dark-gray marker:text-dark-gray pl-5 mt-4 space-y-3 max-w-[542px] text-center lg:text-left">
+                            <ul className="list-disc text-dark-gray marker:text-dark-gray pl-5 mt-4 space-y-3 max-w-[545px] text-center lg:text-left">
                                 <li className="font-normal text-base">
                                     At PizzaNest, we believe that pizza is more than just food — it’s an emotion, a celebration, and comfort all rolled into one delicious slice. Founded with a passion for real ingredients and big flavors, we set out to bring handcrafted, oven-fresh pizzas to every corner of India.
                                 </li>
@@ -69,7 +67,7 @@ const AboutUs = () => {
                 <img
                     src={sliceImg}
                     alt="sliceImg"
-                    className="xl:w-[180px] w-[140px] animate-bounce [animation-duration:2.5s]"
+                    className="xl:w-[180px] sm:w-[140px] w-[100px] animate-bounce [animation-duration:2.5s]"
                 />
             </div>
         </div>

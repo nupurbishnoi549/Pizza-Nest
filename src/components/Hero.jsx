@@ -6,7 +6,7 @@ import CustomButton from './common/CustomButton';
 
 const Hero = () => {
   return (
-    <div className='lg:px-10 px-4'>
+    <div className='lg:px-10 px-4 max-w-[1920px] mx-auto'>
       <div className='max-w-[1360px]'>
         <div
           className="w-full bg-cover bg-center bg-no-repeat lg:min-h-[710px] sm:min-h-[600px] min-h-[540px] rounded-3xl object-cover"
@@ -22,14 +22,13 @@ const Hero = () => {
                 btnText="View Full Menu"
                 btnClass="!bg-none !border-white border !backdrop-blur-[30.9px] !text-white !shadow-none  max-sm:!px-5 "
               />
-
             </div>
             <div className="flex flex-wrap gap-10 max-sm:gap-6 items-center">
               <div className="text-center">
                 <Description descriptionText="5,000+" descriptionClass="text-custom-base text-white font-semibold !leading-120" />
                 <Description descriptionText="Pizzas Delivered" descriptionClass="text-[#E1E1E1] font-semibold pt-[2px] !leading-120" />
               </div>
-              <div className="h-[48px] w-[1px] bg-[#D5D5D5] max-sm:hidden"></div>
+              <div className="h-[39px] w-[1px] bg-[#D5D5D5] max-sm:hidden"></div>
               <div className="text-center">
                 <Description descriptionText="98%" descriptionClass="text-custom-base text-white font-semibold !leading-120" />
                 <Description descriptionText="Happy Customers" descriptionClass="text-[#E1E1E1] font-semibold pt-[2px] !leading-120" />

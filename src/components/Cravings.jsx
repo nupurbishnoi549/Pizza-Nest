@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { CRAVINGS_MENU, MENU_CATEGORIES } from '../utils/helper';
 import sliceImg from '../assets/images/webp/slice-img.png';
 import SubHeading from './common/SubHeading';
+import CustomButton from './common/CustomButton';
+import Heading from './common/Heading';
 
 const Cravings = () => {
     const [active, setActive] = useState(0);
@@ -22,12 +24,12 @@ const Cravings = () => {
 
     return (
 
-        <div className='relative'>
+        <div id='offers' className='relative max-w-[1920px] mx-auto'>
             <div className="absolute left-0 xl:top-[5%] lg:top-0 sm:top-2 top-[-2%]">
                 <img
                     src={sliceImg}
                     alt="sliceImg"
-                    className="xl:w-[180px] sm:w-[140px] w-[100px] animate-bounce [animation-duration:2.5s]"
+                    className="xl:w-[195px] sm:w-[140px] w-[100px] animate-bounce [animation-duration:2.5s]"
                 />
             </div>
             <div className='px-5 py-[100px]'>
@@ -36,28 +38,26 @@ const Cravings = () => {
                         <div className="h-[1px] w-[60px] bg-gradient-to-r from-[#EC6112] via-[#FF902E] to-transparent"></div>
                         <SubHeading subText="Our Menu" />
                         <div className="h-[1px] w-[60px] bg-gradient-to-l from-[#EC6112] via-[#FF902E] to-transparent"></div>
-                    </div>
-
-                    <h2 className="font-semibold md:text-5xl max-w-[490px] mx-auto text-center text-3xl text-black mt-2 leading-120">
-                        Explore Flavours, Pick Your Cravings
-                    </h2>
-                    <div className="flex flex-wrap items-center justify-center gap-3 mt-10">
-                        {MENU_CATEGORIES.map((tab, idx) => (
-                            <button
-                                key={tab.name}
-                                onClick={() => setActive(idx)}
-                                className={`sm:w-[170px] max-sm:w-[140px] py-2 rounded-xl font-semibold text-base border
-  ${active === idx
-                                        ? "bg-gradient-to-r from-[#FC8B44] to-[#FF902E] text-white shadow border-transparent"
-                                        : "bg-white text-light-gray border-[#C1C1C1]"
-                                    }
-  cursor-pointer transition duration-150`}
-                            >
-                                {tab.name}
-                            </button>
-                        ))}
-                    </div>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-10 justify-items-center">
+                    </div>  
+                    <Heading headingClass='!max-w-[490px] !mx-auto !text-center' headingText='Explore Flavours, Pick Your Cravings'/>
+                   <div className="flex flex-wrap items-center justify-center gap-3 mt-10">
+  {MENU_CATEGORIES.map((tab, idx) => (
+    <button
+      key={tab.name}
+      onClick={() => setActive(idx)}
+      className={`sm:w-[170px] max-sm:w-[140px] py-2 rounded-xl font-semibold text-base border
+        ${
+          active === idx
+            ? "bg-gradient-to-r from-[#FC8B44] to-[#FF902E] text-white shadow border-transparent"
+            : "bg-white text-light-gray border-[#C1C1C1] hover:bg-[#FFF3EA] hover:text-[#FC8B44] hover:border-[#FC8B44]"
+        }
+        cursor-pointer transition duration-150 ease-in-out`}
+    >
+      {tab.name}
+    </button>
+  ))}
+</div>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-10 justify-items-center md:[&>*:nth-child(3)]:col-span-2 md:[&>*:nth-child(3)]:justify-self-center lg:[&>*:nth-child(3)]:col-span-1 lg:[&>*:nth-child(3)]:justify-self-auto">
                         {cardData.map((item, idx) => (
                             <div key={item.title + idx} className="flex flex-col items-center w-full max-w-[364px]">
                                 <img
@@ -105,9 +105,7 @@ const Cravings = () => {
                         ))}
                     </div>
                     <div className="flex justify-center mt-8">
-                        <button className="px-8 py-2 cursor-pointer rounded-md text-lg text-white bg-gradient-to-r from-[#FC8B44] to-[#FF902E] font-semibold shadow hover:from-[#FF902E] hover:to-[#FC8B44] transition">
-                            View More
-                        </button>
+                        <CustomButton btnText="View More" btnClass='!py-[17px]'/>
                     </div>
                 </div>
             </div>

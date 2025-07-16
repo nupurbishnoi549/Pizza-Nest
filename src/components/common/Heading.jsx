@@ -2,7 +2,7 @@ import React from 'react'
 
 const Heading = ({ headingClass, headingText }) => {
     return (
-        <h2 className={` font-semibold text-5xl leading-120 ${headingClass}`}>{headingText}</h2>
+        <h2 className={` font-semibold md:text-5xl text-custom-lg leading-120 max-sm:text-center ${headingClass}`}>{headingText}</h2>
     )
 }
 
