@@ -20,8 +20,16 @@ const Hero = () => {
               <CustomButton btnText="Order Now" btnClass="max-sm:px-5" />
               <CustomButton
                 btnText="View Full Menu"
-                btnClass="!bg-none !border-white border !backdrop-blur-[30.9px] !text-white !shadow-none  max-sm:!px-5 "
+                btnClass="
+    !bg-none !border-white border 
+    !backdrop-blur-[30.9px] !text-white !shadow-none 
+    transition-transform duration-200 ease-in-out
+    hover:-translate-y-[1.5px]
+    hover:shadow-[0_8px_20px_#ff980066]
+    max-sm:!px-5
+  "
               />
+
             </div>
             <div className="flex flex-wrap gap-10 max-sm:gap-6 items-center">
               <div className="text-center">

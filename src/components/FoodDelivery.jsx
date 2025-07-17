@@ -33,7 +33,7 @@ const FoodDelivery = () => {
                                 descriptionClass='!text-charcoal-gray !mb-3 !max-w-[540px]'
                             />
                             <div className="flex justify-center lg:justify-start">
-                                <ul className="text-primary-gray space-y-2 mb-6 text-left">
+                                <ul className="text-charcoal-gray space-y-2 mb-6 text-left">
                                     {FEATURES.map((feature, index) => (
                                         <li
                                             key={index}

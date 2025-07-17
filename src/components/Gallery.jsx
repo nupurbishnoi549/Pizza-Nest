@@ -12,7 +12,7 @@ const Gallery = () => {
                 <img
                     src={sliceImg2}
                     alt="sliceImg"
-                    className="xl:w-[180px] sm:w-[140px] w-[100px] animate-bounce [animation-duration:2.5s]"
+                    className="xl:w-[180px] sm:w-[140px] w-[100px] animate-bounce [animation-duration:2.5s] pointer-events-none"
                 />
             </div>
             <div className="md:py-25 py-16 px-4 bg-white">

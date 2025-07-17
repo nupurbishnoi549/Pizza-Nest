@@ -39,23 +39,30 @@ const BestSellers = () => {
                             data-aos="fade-up"
                             data-aos-delay={idx * 100}
                             data-aos-duration="800"
-                            className="relative bg-white rounded-xl p-6 pt-[85px] flex flex-col items-center
-    shadow hover:shadow-xl hover:-translate-y-2
-    transition-all duration-500 ease-in-out"
+                            className="group relative bg-white rounded-xl p-6 pt-[85px] flex flex-col items-center
+      shadow hover:shadow-xl hover:-translate-y-2
+      transition-all duration-500 ease-in-out will-change-transform"
                         >
                             <div className="absolute -top-16 left-1/2 -translate-x-1/2">
                                 <img
                                     src={pizza.img}
                                     alt={pizza.name}
-                                    className="w-[130px] pointer-events-none rounded-full object-cover"
+                                    className="w-[130px] pointer-events-none rounded-full object-cover
+        transition-transform duration-300 ease-in-out group-hover:scale-105"
                                 />
                             </div>
-                            <SubHeading subText={`₹${pizza.price}`} subClass='!text-custom-lg !font-semibold leading-140 !pb-[2px]' />
-                            <h3 className="font-semibold text-custom-base text-near-black mb-[2px]">{pizza.name}</h3>
-                            <p className="text-near-black mb-3 leading-160">{pizza.desc}</p>
+                            <SubHeading
+                                subText={`₹${pizza.price}`}
+                                subClass='!text-custom-lg !font-semibold leading-140 !pb-[2px]'
+                            />
+                            <h3 className="font-semibold text-custom-base text-near-black mb-[2px]">
+                                {pizza.name}
+                            </h3>
+                            <p className="text-dark mb-3 leading-160">{pizza.desc}</p>
                             <CustomButton btnText="Order Now" btnClass="!px-4 !py-3" />
                         </div>
                     ))}
+
                 </div>
             </div>
 

@@ -16,9 +16,9 @@ const LimitedOffer = () => {
             >
                 <img src={grassImg2} alt="grassImg" className="w-[100px]" />
             </div>
-            <div className='py-10 px-5 sm:px-10 md:px-[50px] xl:pl-[150px] lg:pl-[100px] lg:pr-18 xl:pr-[95px]'>
+            <div className='lg:pt-[17px] lg:pb-[33px] py-9 px-5 sm:px-10 md:px-[50px] xl:pl-[150px] lg:pl-[100px] lg:pr-18 xl:pr-[95px]'>
                 <div className="max-w-[1194px] mx-auto">
-                    <div className="flex flex-col lg:flex-row items-center gap-8">
+                    <div className="flex flex-col lg:flex-row items-center gap-11">
                         <div
                             className="text-center lg:text-left"
                             data-aos="fade"
@@ -39,11 +39,10 @@ const LimitedOffer = () => {
                             <CustomButton btnText="Order Now" btnClass='!py-[17px] !mt-4' />
                         </div>
                         <div
-                            className="w-full max-w-[595px]"
                             data-aos="fade"
                             data-aos-duration="1000"
                         >
-                            <img src={tastyImg} alt="tasty pizza" className="w-full h-auto object-contain" />
+                            <img src={tastyImg} alt="tasty pizza" className="w-full object-contain max-w-[553px] xl:h-[350px]" />
                         </div>
                     </div>
                 </div>

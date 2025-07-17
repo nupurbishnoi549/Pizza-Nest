@@ -21,7 +21,13 @@ const AboutUs = () => {
                                 <div className="h-px w-[60px] bg-gradient-to-r from-[#EC6112] to-[#FF902E] opacity-100"></div>
                             </div>
                             <Heading headingText="Welcome to the Nest" headingClass="text-center lg:text-left" />
-                            <ul className="list-disc text-dark-gray marker:text-dark-gray pl-5 mt-4 space-y-3 max-w-[545px] text-center lg:text-left">
+                            <ul className="
+  text-dark-gray max-md:mb-4
+  pl-5 mt-4 space-y-3 max-w-[545px] 
+  text-center 
+  list-none 
+  lg:list-disc lg:text-left lg:marker:text-dark-gray
+">
                                 <li className="font-normal text-base">
                                     At PizzaNest, we believe that pizza is more than just food — it’s an emotion, a celebration, and comfort all rolled into one delicious slice. Founded with a passion for real ingredients and big flavors, we set out to bring handcrafted, oven-fresh pizzas to every corner of India.
                                 </li>
@@ -29,8 +35,7 @@ const AboutUs = () => {
                                     Whether you're craving spicy paneer, a creamy cheese burst, or a fully loaded custom pizza made your way, we've got you covered. Each pizza is baked with love, topped with the freshest veggies, premium cheese, and authentic sauces — all delivered hot and fast, right to your doorstep.
                                 </li>
                             </ul>
-
-                            <div className="flex flex-wrap justify-center lg:justify-start max-[598px]:gap-3 min-[598px]:gap-6 mt-6">
+                            <div className="flex flex-wrap justify-center lg:justify-start max-[598px]:gap-3 min-[598px]:gap-6">
                                 {CARD_ITEMS.map((item, index) => {
                                     const Icon = item.icon;
                                     const paddingTopClass =
@@ -57,13 +62,13 @@ const AboutUs = () => {
                             </div>
                         </div>
                         <div
-                            className="mt-8 lg:mt-0"
+                            className=""
                             data-aos="fade"
                         >
                             <img
                                 src={pizzaImg}
                                 alt="pizza"
-                                className="w-full xl:max-w-[423px] pointer-events-none max-w-[376px] mx-auto"
+                                className="w-full xl:max-w-[423px] max-sm:h-[400px] pointer-events-none max-w-[376px] mx-auto"
                             />
                         </div>
                     </div>

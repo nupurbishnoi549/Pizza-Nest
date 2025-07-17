@@ -5,7 +5,7 @@ import Heading from "./common/Heading";
 const Footer = () => {
     return (
         <footer className="bg-white px-5 md:pt-20 pt-16 pb-4 max-w-[1920px] mx-auto">
-            <div className="max-w-[1140px] mx-auto border-b-[3px] border-b-[#D1D1D166] pb-8">
+            <div className="max-w-[1140px] mx-auto border-b-[3px] border-b-[#D1D1D166] pb-[37px]">
                 <div className="flex flex-col md:flex-row justify-between gap-10">
                     <div className="w-full lg:w-[558px]">
                         <a href="#" className="inline-block ">
@@ -37,7 +37,7 @@ const Footer = () => {
                     <div className="w-full lg:w-[312px] flex flex-row flex-wrap md:justify-between md:gap-x-5 gap-x-10 gap-y-6">
                         <div className="w-[146px]">
                             <h3 className="text-base font-semibold mb-3 text-near-black">Quick Links</h3>
-                            <ul className="space-y-2 text-mid-gray">
+                            <ul className="space-y-2 text-mid-gray leading-160">
                                 {QUICK_LINKS.map((link, i) => (
                                     <li key={i}>
                                         <a
@@ -54,7 +54,7 @@ const Footer = () => {
 
                         <div className="w-[146px]">
                             <h3 className="text-base font-semibold mb-3 text-near-black">Support</h3>
-                            <ul className="space-y-2 text-mid-gray">
+                            <ul className="space-y-2 text-mid-gray leading-160">
                                 {SUPPORT_LINKS.map((link, i) => (
                                     <li key={i}>
                                         <a

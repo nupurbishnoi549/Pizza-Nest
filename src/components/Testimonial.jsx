@@ -4,7 +4,6 @@ import { Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import { LeftArrow, RightArrow, ComaIcon, ComaIcon2 } from "../utils/Icons";
-import swiperPizza from '../assets/images/webp/swiper-pizza.webp';
 import { AVATAR, TESTIMONIALS, PIZZA_IMAGES } from "../utils/helper";
 import SubHeading from "./common/SubHeading";
 import Heading from "./common/Heading";
@@ -45,11 +44,12 @@ const Testimonial = () => {
                                     src={avatar}
                                     alt={`avatar-${i}`}
                                     onClick={() => handleAvatarClick(i)}
-                                    className={`cursor-pointer rounded-full transition-all duration-300 ${i === activeIndex ? 'sm:size-[74px] size-25' : 'sm:size-15 size-20'}`}
-                                    style={{ border: i === activeIndex ? '2.5px solid #FF902E' : 'none' }}
+                                    className={`cursor-pointer rounded-full transition-all duration-300 
+        ${i === activeIndex ? 'border-[3px] border-[#FCE0C9] sm:size-[74px] size-[25px]' : 'border-none sm:size-[60px] size-[20px]'}`}
                                 />
                             ))}
                         </div>
+
                     </div>
                 </div>
 
@@ -64,7 +64,7 @@ const Testimonial = () => {
                         <SwiperSlide key={index}>
                             <div className="bg-white rounded-xl p-6 w-full relative">
                                 <div className="absolute left-0 top-0"><ComaIcon /></div>
-                                <p className="text-mid-gray leading-160 mb-4 font-normal text-base max-w-[632px]">
+                                <p className="text-graphite leading-160 mb-4 font-normal text-base max-w-[632px]">
                                     {item.text}
                                 </p>
                                 <div className="absolute right-[14%] bottom-[27%]"><ComaIcon2 /></div>

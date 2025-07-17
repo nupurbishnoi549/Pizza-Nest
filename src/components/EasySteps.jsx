@@ -13,7 +13,7 @@ const EasySteps = () => {
                     <SubHeading subText="How It Works" />
                     <div className="h-[1px] w-[60px] bg-gradient-to-l from-[#EC6112] via-[#FF902E] to-transparent"></div>
                 </div>
-                <Heading headingText='Your Perfect Pizza in Just 3 Easy Steps!' headingClass='!max-w-[586px] !mx-auto lg:!mb-16 md:!mb-8 !mb-5'/>
+                <Heading headingText='Your Perfect Pizza in Just 3 Easy Steps!' headingClass='!max-w-[586px] !mx-auto lg:!mb-10 md:!mb-8 !mb-5'/>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 sm:gap-6 gap-4 justify-items-center overflow-hidden">
                     {EASY_STEPS.map((step, i) => (
                         <div
@@ -21,13 +21,14 @@ const EasySteps = () => {
                             className={`relative flex flex-col items-center text-center w-[364px] h-[306px] px-6 py-6 rounded-xl ${i === 2 ? 'md:col-span-2 md:justify-self-center lg:col-span-1' : ''
                                 }`}
                         >
-                            <div className="w-[70px] h-[70px] flex items-center justify-center mb-5 bg-[#FFF1E8] rounded-full">
+                            <div className="w-[70px] h-[70px] flex items-center justify-center mb-5 rounded-full bg-[#FFF1E5]/4">
                                 <step.icon className="w-[36px] h-[36px]" />
                             </div>
+
                             <h3 className="text-2xl font-semibold leading-150 text-black mb-2">
                                 {step.title}
                             </h3>
-                            <p className="text-base font-normal leading-160 text-[#555] mb-3 max-w-[306px]">
+                            <p className="text-base font-normal leading-160 text-charcoal-gray mb-3 max-w-[306px]">
                                 {step.desc}
                             </p>
                             <CustomButton btnText=' View Menu' btnClass='!px-4 !py-3'/>

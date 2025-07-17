@@ -15,7 +15,7 @@ import Gallery from './components/Gallery';
 import Testimonial from './components/Testimonial';
 import CravingSomething from './components/CravingSomething';
 import Footer from './components/Footer';
-import BackToTop from './components/BackToTop';
+import BackToTop from './components/common/BackToTop';
 
 const App = () => {
   useEffect(() => {
