@@ -64,7 +64,7 @@ const Testimonial = () => {
                         <SwiperSlide key={index}>
                             <div className="bg-white rounded-xl p-6 w-full relative">
                                 <div className="absolute left-0 top-0"><ComaIcon /></div>
-                                <p className="text-[#545454] leading-160 mb-4 font-normal text-base max-w-[632px]">
+                                <p className="text-mid-gray leading-160 mb-4 font-normal text-base max-w-[632px]">
                                     {item.text}
                                 </p>
                                 <div className="absolute right-[14%] bottom-[27%]"><ComaIcon2 /></div>

@@ -8,7 +8,7 @@ const Footer = () => {
             <div className="max-w-[1140px] mx-auto border-b-[3px] border-b-[#D1D1D166] pb-8">
                 <div className="flex flex-col md:flex-row justify-between gap-10">
                     <div className="w-full lg:w-[558px]">
-                        <a href="/" className="inline-block ">
+                        <a href="#" className="inline-block ">
                             <Heading
                                 headingText="Pizza Nest"
                                 headingClass="!text-custom-2xl !font-medium !mb-4 bg-gradient-to-r from-[#EC6112] to-[#FF902E] bg-clip-text text-transparent"
