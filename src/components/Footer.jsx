@@ -9,10 +9,10 @@ const Footer = () => {
                 <div className="flex flex-col md:flex-row justify-between gap-10">
                     <div className="w-full lg:w-[558px]">
                         <a href="/" className="inline-block ">
-                        <Heading
-                            headingText="Pizza Nest"
-                            headingClass="!text-custom-2xl !font-medium !mb-4 bg-gradient-to-r from-[#EC6112] to-[#FF902E] bg-clip-text text-transparent"
-                        />
+                            <Heading
+                                headingText="Pizza Nest"
+                                headingClass="!text-custom-2xl !font-medium !mb-4 bg-gradient-to-r from-[#EC6112] to-[#FF902E] bg-clip-text text-transparent"
+                            />
                         </a>
                         <p className="text-mid-gray max-w-[558px] text-base leading-160 mb-6">
                             At Pizza Nest, we believe every slice should bring joy. Whether you're
@@ -42,6 +42,7 @@ const Footer = () => {
                                     <li key={i}>
                                         <a
                                             href="#"
+                                            onClick={(e) => e.preventDefault()}
                                             className="relative transition duration-300 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-[#EC6112] hover:to-[#FF902E] after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:transition-all after:duration-300 after:bg-gradient-to-r after:from-[#EC6112] after:to-[#FF902E] hover:after:w-full"
                                         >
                                             {link}
@@ -50,6 +51,7 @@ const Footer = () => {
                                 ))}
                             </ul>
                         </div>
+
                         <div className="w-[146px]">
                             <h3 className="text-base font-semibold mb-3 text-near-black">Support</h3>
                             <ul className="space-y-2 text-mid-gray">
@@ -57,13 +59,16 @@ const Footer = () => {
                                     <li key={i}>
                                         <a
                                             href="#"
-                                            className="relative transition duration-300 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-[#FC8B44] hover:to-[#E86E1D] after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:transition-all after:duration-300 after:bg-gradient-to-r after:from-[#FC8B44] after:to-[#E86E1D] hover:after:w-full">
+                                            onClick={(e) => e.preventDefault()}
+                                            className="relative transition duration-300 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-[#FC8B44] hover:to-[#E86E1D] after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:transition-all after:duration-300 after:bg-gradient-to-r after:from-[#FC8B44] after:to-[#E86E1D] hover:after:w-full"
+                                        >
                                             {link}
                                         </a>
                                     </li>
                                 ))}
                             </ul>
                         </div>
+
                     </div>
                 </div>
             </div>

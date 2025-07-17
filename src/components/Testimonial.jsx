@@ -10,16 +10,11 @@ import SubHeading from "./common/SubHeading";
 import Heading from "./common/Heading";
 
 const Testimonial = () => {
-    // Swiper ref and state for controlling active slide
     const swiperRef = useRef(null);
     const [activeIndex, setActiveIndex] = useState(0);
-
-    // Handler for avatars
     const handleAvatarClick = index => {
-        swiperRef.current?.slideToLoop(index); // slideToLoop for looping swipers
+        swiperRef.current?.slideToLoop(index);
     };
-
-    // Handler for swiper navigation
     const handlePrev = () => swiperRef.current?.slidePrev();
     const handleNext = () => swiperRef.current?.slideNext();
 
@@ -78,13 +73,13 @@ const Testimonial = () => {
                                 <div className="flex items-center gap-1 mt-4">
                                     <button
                                         onClick={handlePrev}
-                                        className="group hover:bg-gradient-orange bg-[#EEEEEE] !rounded-[4px] !px-[15px] !py-3.5 flex items-center justify-center transition"
+                                        className="group hover:bg-gradient-orange cursor-pointer bg-[#EEEEEE] !rounded-[4px] !px-[15px] !py-3.5 flex items-center justify-center transition"
                                     >
                                         <RightArrow />
                                     </button>
                                     <button
                                         onClick={handleNext}
-                                        className="group hover:bg-gradient-orange bg-[#EEEEEE] !rounded-[4px] hover:text-white flex items-center justify-center !px-[15px] !py-3.5 transition"
+                                        className="group hover:bg-gradient-orange cursor-pointer bg-[#EEEEEE] !rounded-[4px] hover:text-white flex items-center justify-center !px-[15px] !py-3.5 transition"
                                     >
                                         <LeftArrow />
                                     </button>

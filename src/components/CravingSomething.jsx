@@ -7,7 +7,7 @@ const CravingSomething = () => {
     return (
         <div className="relative w-full overflow-hidden max-w-[1920px] mx-auto">
             <div className="absolute inset-0 bg-cover bg-center bg-no-repeat craving-something-bg" />
-            <div className="relative z-10 flex items-center justify-center md:py-20 py-16 px-5">
+            <div className="relative z-10 flex items-center justify-center md:py-17 py-16 px-5">
                 <div className="max-w-4xl text-center">
                     <Heading headingClass='!mb-4 !max-w-[722px] !text-white' headingText='Craving something cheesy, spicy, or just straight-up delicious?'/>
                     <Description descriptionText='Your next favorite pizza is waiting. Freshly baked, flavor-packed, and delivered hot to your door — every single time.' descriptionClass='!max-w-[465px] !mx-auto !text-soft-gray !mb-8' />

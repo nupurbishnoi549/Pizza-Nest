@@ -25,19 +25,18 @@ const Gallery = () => {
                         </div>
                         <Heading headingClass='!max-w-[558px] !mx-auto' headingText='A Glimpse Into Our Pizza World' />
                     </div>
-                    {/* Desktop Gallery */}
                     <div className="hidden xl:flex justify-between gap-6 mb-8">
                         <div className="flex flex-col gap-6 w-[267px]">
                             <img
                                 src={GALLERY_IMAGES[0].img}
                                 alt="gallery"
-                                className="w-full h-[291px] object-cover rounded-xl gallery-hover"
+                                className="w-full max-w-[267px] h-[291px] object-cover rounded-xl gallery-hover"
                                 data-aos="fade-up"
                             />
                             <img
                                 src={GALLERY_IMAGES[3].img}
                                 alt="gallery"
-                                className="w-full h-[248px] object-cover rounded-xl gallery-hover"
+                                className="w-full max-w-[267px] h-[248px] object-cover rounded-xl gallery-hover"
                                 data-aos="fade-right"
                             />
                         </div>
@@ -45,20 +44,20 @@ const Gallery = () => {
                             <img
                                 src={GALLERY_IMAGES[1].img}
                                 alt="gallery"
-                                className="w-full h-[329px] object-cover rounded-xl gallery-hover"
+                                className="w-full max-w-[558px] h-[329px] object-cover rounded-xl gallery-hover"
                                 data-aos="zoom-in"
                             />
                             <div className="flex gap-6">
                                 <img
                                     src={GALLERY_IMAGES[4].img}
                                     alt="gallery"
-                                    className="w-[340px] h-[210px] object-cover rounded-xl gallery-hover"
+                                    className="max-w-[340px] w-full h-[210px] object-cover rounded-xl gallery-hover"
                                     data-aos="fade-up-right"
                                 />
                                 <img
                                     src={GALLERY_IMAGES[5].img}
                                     alt="gallery"
-                                    className="w-[194px] h-[210px] object-cover rounded-xl gallery-hover"
+                                    className="max-w-[194px] w-full h-[210px] object-cover rounded-xl gallery-hover"
                                     data-aos="fade-up-left"
                                 />
                             </div>
@@ -78,8 +77,6 @@ const Gallery = () => {
                             />
                         </div>
                     </div>
-
-                    {/* Mobile/Tablet Gallery */}
                     <div className="xl:hidden flex flex-col gap-6 mb-12 items-center max-w-[600px] mx-auto">
                         <div className="flex flex-wrap gap-4 w-full justify-between">
                             {[0, 3].map((i) => (

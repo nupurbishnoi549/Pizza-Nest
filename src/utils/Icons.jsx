@@ -199,7 +199,3 @@ export const LinkdinIcon = () => (
     </svg>
 
 );
-
-
-
-

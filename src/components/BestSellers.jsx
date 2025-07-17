@@ -40,7 +40,8 @@ const BestSellers = () => {
                             data-aos-delay={idx * 100}
                             data-aos-duration="800"
                             className="relative bg-white rounded-xl p-6 pt-[85px] flex flex-col items-center
-                    shadow transition-all duration-300 ease-in-out hover:shadow-xl hover:-translate-y-2"
+    shadow hover:shadow-xl hover:-translate-y-2
+    transition-all duration-500 ease-in-out"
                         >
                             <div className="absolute -top-16 left-1/2 -translate-x-1/2">
                                 <img

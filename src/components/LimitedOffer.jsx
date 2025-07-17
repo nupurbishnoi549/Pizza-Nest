@@ -21,7 +21,7 @@ const LimitedOffer = () => {
                     <div className="flex flex-col lg:flex-row items-center gap-8">
                         <div
                             className="text-center lg:text-left"
-                            data-aos="fade-right"
+                            data-aos="fade"
                             data-aos-duration="1000"
                         >
                             <SubHeading
@@ -40,7 +40,7 @@ const LimitedOffer = () => {
                         </div>
                         <div
                             className="w-full max-w-[595px]"
-                            data-aos="fade-left"
+                            data-aos="fade"
                             data-aos-duration="1000"
                         >
                             <img src={tastyImg} alt="tasty pizza" className="w-full h-auto object-contain" />

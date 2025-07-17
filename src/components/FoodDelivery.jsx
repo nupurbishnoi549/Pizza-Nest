@@ -17,7 +17,7 @@ const FoodDelivery = () => {
                     <div className='w-full flex flex-col lg:flex-row items-center justify-between gap-10 lg:gap-9'>
                         <div
                             className="max-w-[520px] text-center lg:text-left mx-auto lg:mx-0"
-                            data-aos="fade-right"
+                            data-aos="fade"
                             data-aos-duration="1000"
                         >
                             <div className="flex items-center max-sm:justify-center gap-[6px] pb-2">
@@ -51,7 +51,7 @@ const FoodDelivery = () => {
                         </div>
                         <div
                             className="max-w-[612px] w-full"
-                            data-aos="fade-left"
+                            data-aos="fade"
                             data-aos-duration="1000"
                         >
                             <img

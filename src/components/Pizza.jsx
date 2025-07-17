@@ -5,7 +5,7 @@ import SubHeading from './common/SubHeading';
 
 const Pizza = () => {
     return (
-        <div id='menu' className="md:pb-[100px] pb-16 px-[16px max-w-[1920px] mx-auto px-5">
+        <div id='menu' className="md:py-[100px] py-16 max-w-[1920px] mx-auto px-5">
             <div className="max-w-[1140px] mx-auto">
                 <div className="flex flex-col lg:flex-row justify-center items-center lg:items-stretch gap-6">
                     {PROMO_ITEMS.map((item, index) => (

@@ -31,7 +31,7 @@ const Header = () => {
         <div className='px-6 pt-6 pb-[22px] bg-off-white relative max-w-[1920px] mx-auto'>
             <div className='flex justify-between items-center max-w-[1130px] mx-auto'>
                 <div>
-                    <a href="#home" className="inline-block">
+                    <a href="#" className="inline-block">
                         <Heading
                             headingText="Pizza Nest"
                             headingClass="!font-medium !text-custom-xl bg-gradient-to-r from-[#EC6112] to-[#FF902E] bg-clip-text text-transparent"
@@ -53,7 +53,7 @@ const Header = () => {
                     <CustomButton btnText="Contact Us" btnClass="!py-[17.5px]" />
                 </div>
                 <button
-                    className="min-[900px]:hidden text-3xl text-prime z-20"
+                    className="min-[900px]:hidden text-3xl cursor-pointer z-20"
                     onClick={() => setIsMenuOpen(true)}
                     aria-label="Open menu"
                 >
@@ -67,7 +67,7 @@ const Header = () => {
         `}
             >
                 <button
-                    className="absolute top-4 right-6 text-4xl text-prime"
+                    className="absolute top-4 right-6 text-4xl cursor-pointer"
                     onClick={() => setIsMenuOpen(false)}
                     aria-label="Close menu"
                 >
